@@ -13,6 +13,6 @@ client = Twitter::REST::Client.new do |config|
 	config.access_token_secret = ENV['TWITTER_ACCESS_TOKEN_SECRET']
 end
 # ligne qui permet de tweeter sur ton compte
-return client
+return client.update ("Quatrième twitte")
 end
 login_twitter
